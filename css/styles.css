@@ -36,7 +36,7 @@ h1
 .slide__text
 {
     font-family: Kanit-SemiBold;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #3f2a2a;
 }
 .slide__button
@@ -71,22 +71,26 @@ h1
 }
 .article__container 
 {
-    background-color: #3f2a2a;
+    background-color: #946868;
 }
 .section__content
 {
-    background-color: #3f2a2a;  
+    background-color: #6b4848;  
 }
 .footer__container
 {
-    background-color: #20386B;
+    background-color: #727272;
     height: 20vh;
 }
 
 
 
 
-
+@media only screen and (max-width: 900px){
+    .slider__images{
+       background-size: 120vh;
+    }
+}
 @font-face
 {
     font-family: Kanit-Thin;
