@@ -16,21 +16,7 @@ main
     display: flex;
     justify-content: center;
 }
-hr
-{
-    width: 100%;
-    height: .5rem;
-    background-color: #b876cd;
-    border: none;
-}
-hr:nth-child(3)
-{
-    background-color: #ede97c;
-}
-hr:nth-child(4)
-{
-    background-color: #2d9fff;
-}
+
 /* slide inicio */
 
 .slide
@@ -159,12 +145,13 @@ td
 {
     border: 2px solid #fff;
     color: #FFF;
-    margin: .5rem .5rem;
-    padding: .5rem 1rem;
-    font-family: sub-title;
-    font-size: 1.7rem;
+    margin: 3rem auto;
     display: flex;
     justify-content: center;
+    width: 40%;
+    padding: .5rem;
+    font-family: sub-title;
+    font-size: 1.7rem;
 }
 .turn__button:hover
 {
@@ -179,23 +166,45 @@ td
     font-size: 2rem;
     text-align: center;
 }
-.animate__button
+.documentacion__button
 {
     border: 2px solid #fff;
     color: #FFF;
-    margin: .5rem .5rem;
-    padding: .5rem 1rem;
-    font-family: sub-title;
-    font-size: 1.7rem;
+    margin: 3rem auto;
     display: flex;
     justify-content: center;
-    text-align: center;
+    width: 65%;
+    padding: .5rem;
+    font-family: sub-title;
+    font-size: 1.7rem;
+
 }
-.animate__button:hover
+.documentacion__button:hover
 {
     background-color: #FFF;
     color: #0b0e17;
 }
+
+/* wow.js elements */
+
+.wow__title
+{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* flexbox froggy elements */
+
+.froggy__title
+{
+    font-size: 2rem;
+    text-align: center;  
+}
+.froggy__images
+{
+    margin: 1rem 0;
+}
+
 /* mediaqueries */
 
 @media only screen and (max-width: 1200px){

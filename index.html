@@ -6,45 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Actividad 1</title>
         <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/components.css">
         <!-- CSS only -->
         <link rel="stylesheet" href="css/flexboxgrid.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/aside.css">
         <!-- ANIMATE.CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <!-- FONT-FAMILY -->
-        <link rel="stylesheet" href="css/components.css">
-       
     </head>
     <body>
         <header class="header row center-xs">
             <section class="slide row col-xs-12 center-xs">
                     <div class="row center-xs">
                         <p class="slide__text col-xs-12 col-sm-12">¡INVESTIGACION!</p>
-                        <a href="#semantica" class="slide__button col-xs-11 col-lg-2">
+                        <a href="#semantica" class="slide__button col-xs-11 col-lg-3">
                             <h4 class="button__text">Semantica</h4>
                         </a>
-                        <a href="#mediaqueries" class="slide__button col-xs-11 col-lg-2">
+                        <a href="#mediaqueries" class="slide__button col-xs-11 col-lg-3">
                             <h4 class="button__text">Mediaqueries</h4>
                         </a>
-                        <a href="#turn" class="slide__button col-xs-11 col-lg-2">
+                        <a href="#turn" class="slide__button col-xs-11 col-lg-3">
                             <h4 class="button__text">Turn.js</h4>
                         </a>
-                        <a href="#animate" class="slide__button col-xs-11 col-lg-2">
+                        <a href="#animate" class="slide__button col-xs-11 col-lg-3">
                             <h4 class="button__text">Animate.style</h4>
                         </a>
-                        <a href="#wow" class="slide__button col-xs-11 col-lg-2">
+                        <a href="#wow" class="slide__button col-xs-11 col-lg-3">
                             <h4 class="button__text">Wow.js</h4>
+                        </a>
+                        <a href="#froggy" class="slide__button col-xs-11 col-lg-3">
+                            <h4 class="button__text">Flexbox froggy</h4>
                         </a>
                     </div>
             </section>
         </header>
-        <hr>
-        <hr>
-        <hr>
+        <hr class="separator">
+        <hr class="separator">
+        <hr class="separator">
         <main class="row col-sm-12">
             <article id="semantica" class="semantica col-xs-11 col-sm-9">
-                <h1 class="semantica__title">ETIQUETAS SEMANTICAS html5</h1>
+                <h1 class="semantica__title wow">ETIQUETAS SEMANTICAS html5</h1>
+                <hr class="separator__info">
                 <p>Las etiquetas semánticas ayudan a la implementación de los estándares de la Web Semántica, cuya finalidad es hacer el contenido de internet legible para aplicaciones informáticas.
                     Uno de los usos mas importantes de este tipo de etiquetas es la de marcar la información de la pagina para ser indexada por los buscadores web como Google.</p>
                 <table class="table">
@@ -101,7 +102,8 @@
             </article>
             <article id="mediaqueries" class="mediaqueries col-xs-11 col-sm-9">
                 <section>
-                    <h1 class="mediaqueries__title">MEDIA QUERIES</h1>
+                    <h1 class="mediaqueries__title wow">MEDIA QUERIES</h1>
+                    <hr class="separator__info">
                     <p>Las media queries son consultas sobre las características del medio donde se está visualizando una web.</p>
                     <p>Se utilizar para:</p>
                     <ul class="list__mediaqueries">
@@ -162,21 +164,48 @@
             </article>
             <article id="turn" class="turn col-xs-11 col-sm-9">
                 <section>
-                    <h1 class="turn__title">Turn.js</h1>
-                    <h2>¿Que es Turn.js?</h2>
+                    <h1 class="turn__title wow">Turn.js</h1>
+                    <hr class="separator__info">
+                    <h2>¿Que es turn.js?</h2>
                     <p><b>Turn.js</b> es una biblioteca JavaScript que convierte el contenido de una web en un libro, una revista ó un catálogo, con su respectiva animación tal cual pasamos de una página a otra.</p>
-                    <p><a class="turn__button" href="https://www.turnjs.com" target="_blank">Ejemplo</a></p>
+                    <a class="turn__button" href="https://www.turnjs.com" target="_blank">Ejemplo</a>
                 </section>
             </article>
-            <article class="animate col-xs-11 col-sm-9">
+            <article id="animate" class="animate col-xs-11 col-sm-9">
                 <section>
-                    <h1 id="animate" class="animate__title">Animate.style</h1>
+                    <h1 class="animate__title wow">Animate.css</h1>
+                    <hr class="separator__info">
+                    <h2>¿Que es animate.css?</h2>
                     <p><b>Animate.css</b> es una biblioteca de animaciones entre navegadores listas para usar para usar en sus proyectos web. Ideal para énfasis, páginas de inicio, controles deslizantes y sugerencias de guía de atención.</p><h2 style="text-align: center; font-size: 2rem;">¡NO ABUSAR DE LA BIBLIOTECA!</h2>
-                    <p><a href="https://animate.style/" class="animate__button" target="_blank">Página de Documentación</a></p>
+                    <a href="https://animate.style/" class="documentacion__button" target="_blank">Documentación</a>
+                </section>
+            </article>
+            <article id="wow" class="wow col-xs-11 col-sm-9">
+                <section>
+                    <h1 class="wow__title wow">Wow.js</h1>
+                    <hr class="separator__info">
+                    <h2>¿Que es wow.js?</h2>
+                    <p><b>wow.js</b> es una libreria de JavaScript que va de la mano con la libreria de animaciones <b>animate.css</b>, la cual nos permite activar las animaciones según vayamos desplasandonos en la página web.</p>
+                    <a href="https://wowjs.uk/docs.html" class="documentacion__button" target="_blank">Documentación</a>
+                </section>    
+            </article>
+            <article id="froggy" class="froggy col-xs-11 col-sm-9">
+                <section>
+                    <h1 class="froggy__title">FlexboxFroggy</h1>
+                    <hr class="separator__info">
+                    <div class="row center-xs">
+                        <img class="froggy__images col-xs-11 col-sm-6" src="images/froggy/1.png" alt="">
+                        <img class="froggy__images col-xs-11 col-sm-6" src="images/froggy/4.png" alt="">
+                        <img class="froggy__images col-xs-11 col-sm-6" src="images/froggy/8.png" alt="">
+                        <img class="froggy__images col-xs-11 col-sm-6" src="images/froggy/12.png" alt="">
+                        <img class="froggy__images col-xs-11 col-sm-6" src="images/froggy/16.png" alt="">
+                        <img class="froggy__images col-xs-11 col-sm-6" src="images/froggy/20.png" alt="">
+                        <img class="froggy__images col-xs-11 col-sm-6" src="images/froggy/24.png" alt="">
+                    </div>
                 </section>
             </article>
         </main> 
-    
+        
         <script src="js/wow.min.js"></script>
               <script>
               new WOW().init();
