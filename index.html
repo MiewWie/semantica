@@ -4,12 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Semantica</title>
+        <title>Actividad 1</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.css">
+        <!-- CSS only -->
         <link rel="stylesheet" href="css/flexboxgrid.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/aside.css">
+        <!-- ANIMATE.CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!-- FONT-FAMILY -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="css/components.css">
        
     </head>
     <body>
@@ -17,72 +21,165 @@
             <section class="slide row col-xs-12 center-xs">
                     <div class="row center-xs">
                         <p class="slide__text col-xs-12 col-sm-12">¡INVESTIGACION!</p>
-                        <a href="" class="slide__button col-xs-12 col-sm-2">
-                            <h1 class="button__text">Semantica</h1>
+                        <a href="#semantica" class="slide__button col-xs-11 col-lg-2">
+                            <h4 class="button__text">Semantica</h4>
                         </a>
-                        <a href="" class="slide__button col-xs-12 col-sm-2">
-                            <h1 class="button__text">Mediaqueriea</h1>
+                        <a href="#mediaqueries" class="slide__button col-xs-11 col-lg-2">
+                            <h4 class="button__text">Mediaqueries</h4>
                         </a>
-                        <a href="" class="slide__button col-xs-12 col-sm-2">
-                            <h1 class="button__text">Turn.js</h1>
+                        <a href="#turn" class="slide__button col-xs-11 col-lg-2">
+                            <h4 class="button__text">Turn.js</h4>
                         </a>
-                        <a href="" class="slide__button col-xs-12 col-sm-2">
-                            <h1 class="button__text">Animate.style</h1>
+                        <a href="#animate" class="slide__button col-xs-11 col-lg-2">
+                            <h4 class="button__text">Animate.style</h4>
                         </a>
-                        <a href="" class="slide__button col-xs-12 col-sm-2">
-                            <h1 class="button__text">Wow.js</h1>
+                        <a href="#wow" class="slide__button col-xs-11 col-lg-2">
+                            <h4 class="button__text">Wow.js</h4>
                         </a>
                     </div>
             </section>
         </header>
-        <main>
-            <article>
-                <h1>ETIQUETAS SEMANTICAS html5</h1>
+        <hr>
+        <hr>
+        <hr>
+        <main class="row col-sm-12">
+            <article id="semantica" class="semantica col-xs-11 col-sm-9">
+                <h1 class="semantica__title">ETIQUETAS SEMANTICAS html5</h1>
                 <p>Las etiquetas semánticas ayudan a la implementación de los estándares de la Web Semántica, cuya finalidad es hacer el contenido de internet legible para aplicaciones informáticas.
-                Uno de los usos mas importantes de este tipo de etiquetas es la de marcar la información de la pagina para ser indexada por los buscadores web como Google.</p>
-                <table>
+                    Uno de los usos mas importantes de este tipo de etiquetas es la de marcar la información de la pagina para ser indexada por los buscadores web como Google.</p>
+                <table class="table">
                     <thead>
                         <tr>
-                            <td>Etiqueta</td>
-                            <td>Descripcion</td>
+                            <th>Etiqueta</th>
+                            <th>Descripcion</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>header</td>
+                            <th>&lt;header&gt;</th>
                             <td>Representa un grupo de ayudas introductorias o de navegación.
                                 También puede contener logos, formulario de búsqueda o tabla de contenidos.</td>
                         </tr>
                         <tr>
-                            <td>nav</td>
+                            <th>&lt;nav&gt;</th>
                             <td>Sección  de una página que enalza a otras páginas o partes de la misma. 
                                 Una sección con links de navegación.</td>
                         </tr>
                         <tr>
-                            <td>aside</td>
+                            <th>&lt;aside&gt;</th>
                             <td>Sección de una página que contiene contenido relacionado tangencialmente al de su alrededor.
                                 Por lo genreal como barras laterales.</td>
                         </tr>
                         <tr>
-                            <td>main</td>
-                            <td>Representa el contenido predominante de la página debe tener solo un tag (main) solo debe estar contenida por tags de tipo (html), (body), (div) o (form).</td>
+                            <th>&lt;main&gt;</th>
+                            <td>Representa el contenido predominante de la página debe tener solo un tag 
+                                &lt;main&gt;
+                                solo debe estar contenida
+                                por tags de tipo 
+                                &lt;html&gt;
+                                , 
+                                &lt;body&gt;
+                                , 
+                                &lt;div&gt; 
+                                o 
+                                &lt;form&gt;.</td>
                         </tr>
                         <tr>
-                            <td>article</td>
-                            <td>Representa una sección de contenido que puede ser distribuido de forma independiente. Puede ser un post en un foro, un articulo de periódico, una entrada de unblog, un comentario, etc.</td>
+                            <th>&lt;article&gt;</th>
+                            <td>Representa una sección de contenido que puede ser distribuido de forma independiente. Puede ser un post en un foro, un articulo de periódico, una entrada de un blog, un comentario, etc.</td>
                         </tr>
                         <tr>
-                            <td>section</td>
+                            <th>&lt;section&gt;</th>
                             <td>Representa a una sección genénerica de una pagina. Agrupa contenidos que tienen una relación temática entre si.</td>
                         </tr>
                         <tr>
-                            <td>footer</td>
+                            <th>&lt;footer&gt;</th>
                             <td>Representa un pie de página para el elemento que lo contiene. Generalmente contiene información acerca de quién lo escribió, enlaces a documentos relacionados, datos de derechos de auto o similares.</td>
                         </tr>
-
                     </tbody>
                 </table>
             </article>
-        </main>    
+            <article id="mediaqueries" class="mediaqueries col-xs-11 col-sm-9">
+                <section>
+                    <h1 class="mediaqueries__title">MEDIA QUERIES</h1>
+                    <p>Las media queries son consultas sobre las características del medio donde se está visualizando una web.</p>
+                    <p>Se utilizar para:</p>
+                    <ul class="list__mediaqueries">
+                        <li>
+                            <p> Una de las herramientas fundamentales para implementar el "Responsive Web Design".</p>
+                        </li>
+                        <li>
+                            <p>En la mayoría de los casos las Media Queries sirven para definir estilos diferentes para distintos tamaños de la pantalla. Son sencillas de entender y aplicar, nos ofrecen muchas posibilidades a la hora de aplicar estilos condicionales, con múltiples casos de uso.</p> 
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="mediatypes__title">Media Types</h2>
+                    <p>Los Media Types describen la categoría general de un dispositivo.</p>
+                    <ol class="list__mediatypes">
+                        <li>
+                            <p><code>all</code></p>
+                            <p>Apto para todos los dispositivos.</p>
+                        </li>
+                        <li>                        
+                            <p><code>print</code></p>
+                            <p>Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión.</p>
+                        </li>
+                        <li>    
+                            <p><code>screen</code></p>
+                            <p>Destinado principalmente a las pantallas.</p>
+                        </li>
+                        <li>
+                            <p><code>speech</code></p>
+                            <p>Destinado a sintetizadores de voz.</p>
+                        </li>
+                    </ol>
+                </section>
+    
+                <section>
+                    <h2 class="logic__element-title">Operadores Lógicos</h2>
+                    <p class="logic__element-text">Se pueden redactar queries utilizando operadores lógicos, incluyendo 
+                        <code>not</code>
+                        , 
+                        <code>and</code>
+                        , y 
+                        <code>only</code>.</p>
+                    <ul class="logic__element-list">
+                        <li>
+                            <h3 class="logic__element-sub--tittle">not</h3>
+                            <p class="logic__element-text">Es una negación de una condición. Cuando esa condición no se cumpla se aplicarán las media queries.</p>
+                        </li>
+                        <li>
+                            <h3 class="logic__element-sub--tittle">and</h3>
+                            <p class="logic__element-text">Las dos condiciones deben cumplirse para que se evalúe como verdadera.</p>
+                        </li>
+                        <li>
+                            <h3 class="logic__element-sub--tittle">only</h3>
+                            <p class="logic__element-text">Se aplican las reglas solo en el caso que se cunpla cierta circunstancia.</p>
+                        </li>
+                    </ul>
+                </section>            
+            </article>
+            <article id="turn" class="turn col-xs-11 col-sm-9">
+                <section>
+                    <h1 class="turn__title">Turn.js</h1>
+                    <h2>¿Que es Turn.js?</h2>
+                    <p><b>Turn.js</b> es una biblioteca JavaScript que convierte el contenido de una web en un libro, una revista ó un catálogo, con su respectiva animación tal cual pasamos de una página a otra.</p>
+                    <p><a class="turn__button" href="https://www.turnjs.com" target="_blank">Ejemplo</a></p>
+                </section>
+            </article>
+            <article class="animate col-xs-11 col-sm-9">
+                <section>
+                    <h1 id="animate" class="animate__title">Animate.style</h1>
+                    <p><b>Animate.css</b> es una biblioteca de animaciones entre navegadores listas para usar para usar en sus proyectos web. Ideal para énfasis, páginas de inicio, controles deslizantes y sugerencias de guía de atención.</p><h2 style="text-align: center; font-size: 2rem;">¡NO ABUSAR DE LA BIBLIOTECA!</h2>
+                    <p><a href="https://animate.style/" class="animate__button" target="_blank">Página de Documentación</a></p>
+                </section>
+            </article>
+        </main> 
+    
+        <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     </body>
 </html>

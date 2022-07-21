@@ -1,12 +1,8 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-h1
+/* Contenedores */
+
+body
 {
-    font-family: Kanit-Thin;
+    background-color: #0b0e17;
 }
 header.header
 {
@@ -15,11 +11,32 @@ header.header
     height: 100vh;
 
 }
+main
+{
+    display: flex;
+    justify-content: center;
+}
+hr
+{
+    width: 100%;
+    height: .5rem;
+    background-color: #b876cd;
+    border: none;
+}
+hr:nth-child(3)
+{
+    background-color: #ede97c;
+}
+hr:nth-child(4)
+{
+    background-color: #2d9fff;
+}
+/* slide inicio */
+
 .slide
 {
     height: 100%;
-    background: url(/images/sea-g6445edafa_1280.png);
-    background-repeat: no-repeat;
+    background: #0b0e17;
     background-size: 100%;
     width: 100%;
     align-items: center;
@@ -29,6 +46,10 @@ header.header
     border: 2px solid #FFF;
     color: #FFF;
     margin: .5rem .5rem;
+    font-family: sub-title;
+
+    animation: bounceInDown;
+    animation-duration: 1s;
 }
 .slide__button:hover
 {
@@ -38,28 +59,146 @@ header.header
 
 .slide__text
 {
-    font-family: Kanit-SemiBold;
+    font-family: title;
     font-size: 5rem;
     margin: 0 0 3rem;
     color: #fff;
+
+    animation: bounceInDown;
+    animation-duration: 1s;
 }
 
+ /* Semantica elements */
 
-
-td, tr
+.semantica__title
 {
-    border: 1px solid #000;
+    font-size: 2rem;
+    text-align: center;
+}
+.example__title
+{
+    text-align: center;
+}
+.example__images
+{
+    width: 80%;
+}
+
+/* Tabla etiquetas semanticas */
+
+td, tr, th
+{
+    border: 1px solid #FFF;
     padding: 1rem;
     text-align: left;
+    color: #fff;
+    text-shadow: 2px #fff6 ;
+
 }
-table
+.table
 {
-    overflow-wrap: anywhere !important;
-    border-collapse: separate;
     border-spacing: 0;
+    margin: 2rem 0;
+}
+th
+{
+    width: 20%;
+    font-size: 1.2rem;
+    font-family: sub-title;
+}
+td
+{
+    width: 80%;
+    font-size: 1.2rem;
+    font-family: text;
 }
 
-@media only screen and (max-width: 900px){
+/* mediaqueries elements */
+
+.mediaqueries__title
+{
+    font-size: 2rem;
+    text-align: center ;
+}
+.list__mediaqueries
+{
+    padding: 0 3rem;
+}
+.list__mediatypes
+{
+    padding: 0 3rem;
+    list-style: none;
+}
+.logic__element-list
+{
+    list-style: none;
+    padding: 0 3rem;
+}
+
+/* aside elements*/
+
+.aside__container
+{
+    width: 100%;
+    border: 2px solid #FFF;
+
+}
+.aside__list
+{
+    list-style: none;
+}
+
+/* turn.js elements */
+
+.turn__title
+{
+    font-size: 2rem;
+    text-align: center;
+}
+.turn__button
+{
+    border: 2px solid #fff;
+    color: #FFF;
+    margin: .5rem .5rem;
+    padding: .5rem 1rem;
+    font-family: sub-title;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+}
+.turn__button:hover
+{
+    background-color: #FFF;
+    color: #0b0e17;
+}
+
+/* animate.style elements */
+
+.animate__title
+{
+    font-size: 2rem;
+    text-align: center;
+}
+.animate__button
+{
+    border: 2px solid #fff;
+    color: #FFF;
+    margin: .5rem .5rem;
+    padding: .5rem 1rem;
+    font-family: sub-title;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.animate__button:hover
+{
+    background-color: #FFF;
+    color: #0b0e17;
+}
+/* mediaqueries */
+
+@media only screen and (max-width: 1200px){
     .slide{
        background-size: 200vh;
     }
@@ -67,13 +206,9 @@ table
         font-size: 2.5rem;
     }
 }
-@font-face
-{
-    font-family: Kanit-Thin;
-    src: url(/fontfamily/Kanit/Kanit-Thin.ttf);
-}
-@font-face
-{
-    font-family: Kanit-SemiBold;
-    src: url(/fontfamily/Kanit/Kanit-SemiBold.ttf);
+
+@media only screen and (max-width: 1000px){
+    main{
+        margin: 1rem;
+    }
 }
